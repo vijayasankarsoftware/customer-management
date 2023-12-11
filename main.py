@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:8667094322vijayasankar@localhost:3306/customer'
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://sql8669523:RPRTb7EiLg@sql8.freesqldatabase.com:3306/sql8669523'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://sql8669523:RPRTb7EiLg@sql8.freesqldatabase.com:3306/sql8669523'
 app.config['SQLALCHEMY_TRACK_NOTIFICATIONS'] = False
 db = SQLAlchemy(app)
 
